@@ -72,15 +72,3 @@ def check_mentions(api, keywords, since_id):
             
 
         return new_since_id
-
-
-
-def main():
-    since_id = 1
-    while True:
-        since_id = check_mentions(api, [''], since_id)
-        print("Waiting...")
-        time.sleep(60)
-
-if __name__ == "__main__":
-    main()
